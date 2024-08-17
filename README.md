@@ -37,7 +37,33 @@ creativity.
 
 ### Home
 
-<img src="ss/Home.png">
+<img src="src/assets/images/projects/My-Portfolio-V2/Home.png">
+
+### About
+
+<img src="src/assets/images/projects/My-Portfolio-V2/About.png">
+
+### Skills
+
+<img src="src/assets/images/projects/My-Portfolio-V2/Skills.png">
+
+### Projects
+
+<img src="src/assets/images/projects/My-Portfolio-V2/Projects1.png">
+<img src="src/assets/images/projects/My-Portfolio-V2/Projects2.png">
+<img src="src/assets/images/projects/My-Portfolio-V2/Projects3.png">
+
+### Services
+
+<img src="src/assets/images/projects/My-Portfolio-V2/Services.png">
+
+### Contacts
+
+<img src="src/assets/images/projects/My-Portfolio-V2/Contacts.png">
+
+### Codes
+
+<img src="src/assets/images/projects/My-Portfolio-V2/Codes.png">
 
 ## 📝 Version
 
