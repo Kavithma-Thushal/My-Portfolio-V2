@@ -51,7 +51,7 @@ Got any bugs, issues, or need help understanding the code? Feel free to reach ou
 
 <div align="center">
 
-#### This project is licensed under the [Apache License](LICENSE)
+#### This project is licensed under the [GNU License](LICENSE)
 
 #### © 2024 All Rights Reserved | Designed by [Kavithma Thushal](https://github.com/Kavithma-Thushal)
 
