@@ -1,0 +1,14 @@
+.contacts-container {
+    padding: 2rem;
+}
+
+form {
+    background-color: #000a1f;
+    /* darkBlue */
+}
+
+input,
+textarea {
+    border: 1px solid #00c7ff;
+    /* neonBlue */
+}
