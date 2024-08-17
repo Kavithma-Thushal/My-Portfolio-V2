@@ -6,7 +6,7 @@ export function Home() {
             <div className="text-center space-y-6">
                 <h1 className="text-6xl font-extrabold">Welcome to My Portfolio</h1>
                 <p className="text-xl max-w-2xl mx-auto text-white">
-                    Explore my work, learn more about my skills, and discover the projects I've been working on..
+                    Explore my work, learn more about my skills, and discover the projects I've been working on.
                 </p>
                 <div className="flex justify-center space-x-6">
                     <a href="/about" className="home-button bg-neonBlue text-darkBlue px-6 py-3 rounded-lg font-semibold shadow-lg hover:bg-blue-500 transition duration-300">About Me</a>
