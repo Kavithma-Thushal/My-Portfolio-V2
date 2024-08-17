@@ -10,7 +10,11 @@ export default {
       textColor: {
         'darkBlue': '#000a1f',
         'neonBlue': '#00c7ff',
-      }
+      },
+      borderColor: {
+        'darkBlue': '#000a1f',
+        'neonBlue': '#00c7ff',
+      },
     },
   },
   plugins: [],

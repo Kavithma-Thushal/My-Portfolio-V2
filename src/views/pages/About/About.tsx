@@ -1,8 +1,6 @@
-import './About.css';
-
 export function About() {
     return (
-        <div className="about-container flex flex-col items-center justify-center min-h-screen bg-darkBlue text-white p-8">
+        <div className="flex flex-col items-center justify-center min-h-screen bg-darkBlue text-white p-8">
             <div className="max-w-4xl text-center space-y-6">
                 <h1 className="text-5xl font-extrabold text-neonBlue">About Me</h1>
                 <p className="text-lg leading-relaxed">
@@ -11,8 +9,8 @@ export function About() {
                 <p className="text-lg leading-relaxed">
                     My approach to development is driven by a desire to solve problems creatively and efficiently. I love collaborating with others, learning new technologies, and continuously improving my skills. Whether it's front-end development, UI/UX design, or exploring new frameworks, I'm always eager to take on new challenges.
                 </p>
-                <a href="/projects" className="about-button inline-block bg-neonBlue text-darkBlue px-6 py-3 rounded-lg font-semibold shadow-lg hover:bg-blue-500 transition duration-300">
-                    View My Projects
+                <a href="/My-Portfolio-V2/projects" className="inline-block bg-neonBlue text-darkBlue px-6 py-3 rounded-lg font-semibold shadow-lg transition duration-500 hover:scale-105">
+                    View Projects
                 </a>
             </div>
         </div>
