@@ -1,6 +1,6 @@
 export function Skills() {
     return (
-        <div className="skills-container flex flex-col items-center justify-center min-h-screen bg-darkBlue text-white p-4 sm:p-8">
+        <div className="flex flex-col items-center justify-center min-h-screen bg-darkBlue text-white p-4 sm:p-8">
             <div className="max-w-3xl sm:max-w-4xl text-center space-y-8">
                 <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-neonBlue">My Skills</h1>
                 <p className="text-base sm:text-lg leading-relaxed">Here are some of the technologies and tools I have experience with.
