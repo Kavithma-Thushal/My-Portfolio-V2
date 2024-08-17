@@ -19,12 +19,14 @@ const ProjectCard = ({
                 <div className="flex justify-center gap-2 mt-4">
 
                     <button onClick={onPreviousImage}
-                        className="w-10 h-10 flex items-center justify-center rounded-full bg-black text-white shadow-md transition-colors hover:bg-gray-800">
+                        className="w-10 h-10 flex items-center justify-center rounded-full bg-black text-white shadow-md 
+                        transition-colors hover:bg-gray-800">
                         <i className="fas fa-chevron-left"></i>
                     </button>
 
                     <button onClick={onNextImage}
-                        className="w-10 h-10 flex items-center justify-center rounded-full bg-black text-white shadow-md transition-colors hover:bg-gray-800">
+                        className="w-10 h-10 flex items-center justify-center rounded-full bg-black text-white shadow-md 
+                        transition-colors hover:bg-gray-800">
                         <i className="fas fa-chevron-right"></i>
                     </button>
 
@@ -45,7 +47,8 @@ const ProjectCard = ({
                     </p>
 
                     <a href={githubLink} target="_blank" rel="noopener noreferrer"
-                        className="ml-5 block mt-8 font-bold text-center inline-flex items-center px-3 py-1 rounded bg-black text-white hover:bg-gray-800">
+                        className="ml-5 block mt-8 font-bold text-center inline-flex items-center px-3 py-1 rounded bg-black 
+                        text-white hover:scale-105 transition duration-300">
                         <i className="fab fa-github mr-2"></i> View on GitHub
                     </a>
                 </div>
