@@ -106,6 +106,19 @@ const connect4Images = [
   'src/assets/images/projects/Connect-4-Game/Codes.png',
 ];
 
+const portfolioV2Images = [
+  'src/assets/images/projects/My-Portfolio-V2/Theme.png',
+  'src/assets/images/projects/My-Portfolio-V2/Home.png',
+  'src/assets/images/projects/My-Portfolio-V2/About.png',
+  'src/assets/images/projects/My-Portfolio-V2/Skills.png',
+  'src/assets/images/projects/My-Portfolio-V2/Projects1.png',
+  'src/assets/images/projects/My-Portfolio-V2/Projects2.png',
+  'src/assets/images/projects/My-Portfolio-V2/Projects3.png',
+  'src/assets/images/projects/My-Portfolio-V2/Services.png',
+  'src/assets/images/projects/My-Portfolio-V2/Contacts.png',
+  'src/assets/images/projects/My-Portfolio-V2/Codes.png',
+];
+
 export function Projects() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentProject, setCurrentProject] = useState('');
@@ -118,6 +131,7 @@ export function Projects() {
   const [currentLinkedinImage, setCurrentLinkedinImage] = useState(0);
   const [currentMernPOSImage, setCurrentMernPOSImage] = useState(0);
   const [currentConnect4Image, setCurrentConnect4Image] = useState(0);
+  const [currentPortfolioV2Image, setCurrentPortfolioV2Image] = useState(0);
 
   const openModal = (projectType) => {
     setIsModalOpen(true);
@@ -228,6 +242,16 @@ export function Projects() {
           onPreviousImage={() => setCurrentConnect4Image((prev) => (prev - 1 + connect4Images.length) % connect4Images.length)}
           onClickImage={() => openModal('connect4')} />
 
+        <ProjectCard projectName="My Portfolio V2"
+          description="Dive into a showcase of my diverse skill set, meticulously crafted using React and Vite. This portfolio highlights my expertise in creating dynamic and responsive web applications with a modern touch."
+          technologies={["React", "Tailwind CSS"]}
+          githubLink="https://github.com/Kavithma-Thushal/My-Portfolio-V2"
+          images={portfolioV2Images}
+          currentImageIndex={currentPortfolioV2Image}
+          onNextImage={() => setCurrentPortfolioV2Image((prev) => (prev + 1) % portfolioV2Images.length)}
+          onPreviousImage={() => setCurrentPortfolioV2Image((prev) => (prev - 1 + portfolioV2Images.length) % portfolioV2Images.length)}
+          onClickImage={() => openModal('portfoliov2')} />
+
       </div>
 
       <PopUpImage isOpen={isModalOpen} onClose={closeModal}
@@ -239,7 +263,8 @@ export function Projects() {
                   currentProject === 'portfolio' ? portfolioImages[currentPortfolioImage] :
                     currentProject === 'linkedinClone' ? linkedInCloneImages[currentLinkedinImage] :
                       currentProject === 'mernPOS' ? mernPOSImages[currentMernPOSImage] :
-                        currentProject === 'connect4' ? connect4Images[currentConnect4Image] : ''}
+                        currentProject === 'connect4' ? connect4Images[currentConnect4Image] :
+                          currentProject === 'portfoliov2' ? portfolioV2Images[currentPortfolioV2Image] : ''}
 
         onNext={currentProject === 'shoeShop' ? () => setCurrentShoeShopImage((prev) => (prev + 1) % shoeShopImages.length) :
           currentProject === 'computerShop' ? () => setCurrentComputerShopImage((prev) => (prev + 1) % computerShopImages.length) :
@@ -249,7 +274,8 @@ export function Projects() {
                   currentProject === 'portfolio' ? () => setCurrentPortfolioImage((prev) => (prev + 1) % portfolioImages.length) :
                     currentProject === 'linkedinClone' ? () => setCurrentLinkedinImage((prev) => (prev + 1) % linkedInCloneImages.length) :
                       currentProject === 'mernPOS' ? () => setCurrentMernPOSImage((prev) => (prev + 1) % mernPOSImages.length) :
-                        currentProject === 'connect4' ? () => setCurrentConnect4Image((prev) => (prev + 1) % connect4Images.length) : () => { }}
+                        currentProject === 'connect4' ? () => setCurrentConnect4Image((prev) => (prev + 1) % connect4Images.length) :
+                          currentProject === 'portfoliov2' ? () => setCurrentPortfolioV2Image((prev) => (prev + 1) % portfolioV2Images.length) : () => { }}
 
         onPrevious={currentProject === 'shoeShop' ? () => setCurrentShoeShopImage((prev) => (prev - 1 + shoeShopImages.length) % shoeShopImages.length) :
           currentProject === 'computerShop' ? () => setCurrentComputerShopImage((prev) => (prev - 1 + computerShopImages.length) % computerShopImages.length) :
@@ -259,7 +285,8 @@ export function Projects() {
                   currentProject === 'portfolio' ? () => setCurrentPortfolioImage((prev) => (prev - 1 + portfolioImages.length) % portfolioImages.length) :
                     currentProject === 'linkedinClone' ? () => setCurrentLinkedinImage((prev) => (prev - 1 + linkedInCloneImages.length) % linkedInCloneImages.length) :
                       currentProject === 'mernPOS' ? () => setCurrentMernPOSImage((prev) => (prev - 1 + mernPOSImages.length) % mernPOSImages.length) :
-                        currentProject === 'connect4' ? () => setCurrentConnect4Image((prev) => (prev - 1 + connect4Images.length) % connect4Images.length) : () => { }} />
+                        currentProject === 'connect4' ? () => setCurrentConnect4Image((prev) => (prev - 1 + connect4Images.length) % connect4Images.length) :
+                          currentProject === 'portfoliov2' ? () => setCurrentPortfolioV2Image((prev) => (prev - 1 + portfolioV2Images.length) % portfolioV2Images.length) : () => { }} />
 
     </div>
   );
