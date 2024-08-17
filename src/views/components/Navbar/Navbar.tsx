@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-// import logo from "../../../assets/images/logo.png";
+import logo from "../../../assets/images/logo.png";
 import "./Navbar.css";
 
 export function Navbar() {
@@ -8,7 +8,7 @@ export function Navbar() {
       <div className="container mx-auto flex justify-between items-center">
         <a href="https://github.com/Kavithma-Thushal/My-Portfolio-V2" target="_blank" rel="noopener noreferrer">
           <div className="flex items-center">
-            {/* <img src={logo} className="Nav-logo ml-5 mr-5 mt-2" alt="Nav-logo" /> */}
+            <img src={logo} className="Nav-logo ml-5 mr-5 mt-2" alt="Nav-logo" />
             <div className="text-2xl font-bold">P O R T F O <span className="text-neonBlue">L I O</span></div>
           </div>
         </a>
