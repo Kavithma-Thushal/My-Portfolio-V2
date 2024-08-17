@@ -24,8 +24,8 @@ export function Navbar() {
           <Link to="/My-Portfolio-V2/home" className="hover:text-neonBlue transition-colors duration-300">HOME</Link>
           <Link to="/My-Portfolio-V2/about" className="hover:text-neonBlue transition-colors duration-300">ABOUT</Link>
           <Link to="/My-Portfolio-V2/skills" className="hover:text-neonBlue transition-colors duration-300">SKILLS</Link>
-          <Link to="/My-Portfolio-V2/projects" className="hover:text-neonBlue transition-colors duration-300">PROJECTS</Link>
           <Link to="/My-Portfolio-V2/services" className="hover:text-neonBlue transition-colors duration-300">SERVICES</Link>
+          <Link to="/My-Portfolio-V2/projects" className="hover:text-neonBlue transition-colors duration-300">PROJECTS</Link>
           <Link to="/My-Portfolio-V2/contacts" className="hover:text-neonBlue transition-colors duration-300">CONTACTS</Link>
         </div>
 
@@ -41,8 +41,8 @@ export function Navbar() {
           <Link to="/My-Portfolio-V2/home" onClick={toggleMenu} className="hover:text-neonBlue transition-colors duration-300">HOME</Link>
           <Link to="/My-Portfolio-V2/about" onClick={toggleMenu} className="hover:text-neonBlue transition-colors duration-300">ABOUT</Link>
           <Link to="/My-Portfolio-V2/skills" onClick={toggleMenu} className="hover:text-neonBlue transition-colors duration-300">SKILLS</Link>
-          <Link to="/My-Portfolio-V2/projects" onClick={toggleMenu} className="hover:text-neonBlue transition-colors duration-300">PROJECTS</Link>
           <Link to="/My-Portfolio-V2/services" onClick={toggleMenu} className="hover:text-neonBlue transition-colors duration-300">SERVICES</Link>
+          <Link to="/My-Portfolio-V2/projects" onClick={toggleMenu} className="hover:text-neonBlue transition-colors duration-300">PROJECTS</Link>
           <Link to="/My-Portfolio-V2/contacts" onClick={toggleMenu} className="hover:text-neonBlue transition-colors duration-300">CONTACTS</Link>
         </div>
       </div>
