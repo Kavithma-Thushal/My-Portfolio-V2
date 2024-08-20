@@ -3,6 +3,7 @@ import PopUpImage from './PopUpImage';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 
 // Shoe Shop Management System
+import ShoeShopTheme from '../../../assets/images/projects/Shoe-Shop/Theme.png';
 import ShoeShopHome from '../../../assets/images/projects/Shoe-Shop/Home.png';
 import ShoeShopSignUp from '../../../assets/images/projects/Shoe-Shop/SignUp.png';
 import ShoeShopSignIn from '../../../assets/images/projects/Shoe-Shop/SignIn.png';
@@ -17,6 +18,7 @@ import ShoeShopUser from '../../../assets/images/projects/Shoe-Shop/User.png';
 import ShoeShopCodes from '../../../assets/images/projects/Shoe-Shop/Codes.png';
 
 // Computer Shop Management System
+import ComputerShopTheme from '../../../assets/images/projects/Computer-Shop/Theme.png';
 import ComputerShopLogin from '../../../assets/images/projects/Computer-Shop/Login.png';
 import ComputerShopAdminDashboard from '../../../assets/images/projects/Computer-Shop/Admin-Dashboard.png';
 import ComputerShopCustomer from '../../../assets/images/projects/Computer-Shop/Customer.png';
@@ -29,6 +31,7 @@ import ComputerShopCustomerReport from '../../../assets/images/projects/Computer
 import ComputerShopCodes from '../../../assets/images/projects/Computer-Shop/Codes.png';
 
 // Hostel Management System
+import HostelManagementTheme from '../../../assets/images/projects/Hostel-Management/Theme.png';
 import HostelManagementHome from '../../../assets/images/projects/Hostel-Management/Home.png';
 import HostelManagementAdminDashboard from '../../../assets/images/projects/Hostel-Management/Admin-Dashboard.png';
 import HostelManagementStudents from '../../../assets/images/projects/Hostel-Management/Students.png';
@@ -40,12 +43,14 @@ import HostelManagementReports from '../../../assets/images/projects/Hostel-Mana
 import HostelManagementCodes from '../../../assets/images/projects/Hostel-Management/Codes.png';
 
 // Chat Application
+import ChatRoomTheme from '../../../assets/images/projects/Chat-Application/Theme.png';
 import ChatRoom1 from '../../../assets/images/projects/Chat-Application/Chat-Room-1.png';
 import ChatRoom2 from '../../../assets/images/projects/Chat-Application/Chat-Room-2.png';
 import ChatApplicationCodes from '../../../assets/images/projects/Chat-Application/Codes.png';
 import ChatApplicationLiveChatRoom from '../../../assets/images/projects/Chat-Application/Live-Chat-Room.gif';
 
 // Shoe Shop Landing Page
+import ShoeShopLandingTheme from '../../../assets/images/projects/Shoe-Shop-Landing/Theme.png';
 import ShoeShopLandingHome from '../../../assets/images/projects/Shoe-Shop-Landing/Home.png';
 import ShoeShopLandingAbout from '../../../assets/images/projects/Shoe-Shop-Landing/About.png';
 import ShoeShopLandingShoeCollection1 from '../../../assets/images/projects/Shoe-Shop-Landing/Shoe-Collection-1.png';
@@ -57,6 +62,7 @@ import ShoeShopLandingContacts from '../../../assets/images/projects/Shoe-Shop-L
 import ShoeShopLandingCodes from '../../../assets/images/projects/Shoe-Shop-Landing/Codes.png';
 
 // Portfolio v1
+import PortfolioTheme from '../../../assets/images/projects/My-Portfolio/Theme.png';
 import PortfolioHome from '../../../assets/images/projects/My-Portfolio/Home.png';
 import PortfolioAbout from '../../../assets/images/projects/My-Portfolio/About.png';
 import PortfolioSkills from '../../../assets/images/projects/My-Portfolio/Skills.png';
@@ -70,6 +76,7 @@ import PortfolioContact2 from '../../../assets/images/projects/My-Portfolio/Cont
 import PortfolioCodes from '../../../assets/images/projects/My-Portfolio/Codes.png';
 
 // LinkedIn Clone
+import LinkedInCloneTheme from '../../../assets/images/projects/LinkedIn-Clone/Theme.png';
 import LinkedInCloneHome from '../../../assets/images/projects/LinkedIn-Clone/Home.png';
 import LinkedInCloneNetwork from '../../../assets/images/projects/LinkedIn-Clone/Network.png';
 import LinkedInClonePost from '../../../assets/images/projects/LinkedIn-Clone/Post.png';
@@ -103,6 +110,7 @@ import PortfolioV2Contacts from '../../../assets/images/projects/My-Portfolio-V2
 import PortfolioV2Codes from '../../../assets/images/projects/My-Portfolio-V2/Codes.png';
 
 const shoeShopImages = [
+  ShoeShopTheme,
   ShoeShopHome,
   ShoeShopSignUp,
   ShoeShopSignIn,
@@ -118,6 +126,7 @@ const shoeShopImages = [
 ];
 
 const computerShopImages = [
+  ComputerShopTheme,
   ComputerShopLogin,
   ComputerShopAdminDashboard,
   ComputerShopCustomer,
@@ -131,6 +140,7 @@ const computerShopImages = [
 ];
 
 const hostelManagementImages = [
+  HostelManagementTheme,
   HostelManagementHome,
   HostelManagementAdminDashboard,
   HostelManagementStudents,
@@ -143,6 +153,7 @@ const hostelManagementImages = [
 ];
 
 const chatApplicationImages = [
+  ChatRoomTheme,
   ChatRoom1,
   ChatRoom2,
   ChatApplicationCodes,
@@ -150,6 +161,7 @@ const chatApplicationImages = [
 ];
 
 const shoeShopLandingImages = [
+  ShoeShopLandingTheme,
   ShoeShopLandingHome,
   ShoeShopLandingAbout,
   ShoeShopLandingShoeCollection1,
@@ -162,6 +174,7 @@ const shoeShopLandingImages = [
 ];
 
 const portfolioImages = [
+  PortfolioTheme,
   PortfolioHome,
   PortfolioAbout,
   PortfolioSkills,
@@ -176,6 +189,7 @@ const portfolioImages = [
 ];
 
 const linkedInCloneImages = [
+  LinkedInCloneTheme,
   LinkedInCloneHome,
   LinkedInCloneNetwork,
   LinkedInClonePost,
