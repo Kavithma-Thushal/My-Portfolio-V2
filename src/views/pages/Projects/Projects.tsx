@@ -122,6 +122,12 @@ import POSFrontendOrder from '../../../assets/images/projects/POS-FrontEnd-React
 import POSFrontendOrderDetails from '../../../assets/images/projects/POS-FrontEnd-React/OrderDetails.png';
 import POSFrontendCodes from '../../../assets/images/projects/POS-FrontEnd-React/Codes.png';
 
+// POS BackEnd - Spring
+import POSBackendSpringTheme from '../../../assets/images/projects/POS-BackEnd-Spring/Theme.png';
+import POSBackendSpringCustomer from '../../../assets/images/projects/POS-BackEnd-Spring/Customer.png';
+import POSBackendSpringItem from '../../../assets/images/projects/POS-BackEnd-Spring/Item.png';
+import POSBackendSpringCodes from '../../../assets/images/projects/POS-BackEnd-Spring/Codes.png';
+
 const shoeShopImages = [
   ShoeShopTheme,
   ShoeShopHome,
@@ -254,6 +260,13 @@ const posFrontendImages = [
   POSFrontendCodes
 ];
 
+const posBackendSpringImages = [
+  POSBackendSpringTheme,
+  POSBackendSpringCustomer,
+  POSBackendSpringItem,
+  POSBackendSpringCodes
+];
+
 export function Projects() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentProject, setCurrentProject] = useState('');
@@ -269,6 +282,7 @@ export function Projects() {
   const [currentPortfolioV2Image, setCurrentPortfolioV2Image] = useState(0);
   const [currentStudentCLIImage, setCurrentStudentCLIImage] = useState(0);
   const [currentPOSFrontendImage, setCurrentPOSFrontendImage] = useState(0);
+  const [currentPOSBackendSpringImage, setCurrentPOSBackendSpringImage] = useState(0);
 
   const openModal = (projectType) => {
     setIsModalOpen(true);
@@ -409,6 +423,16 @@ export function Projects() {
           onPreviousImage={() => setCurrentPOSFrontendImage((prev) => (prev - 1 + posFrontendImages.length) % posFrontendImages.length)}
           onClickImage={() => openModal('posFrontend')} />
 
+        <ProjectCard projectName="POS BackEnd - Spring"
+          description="This is my first project where I've implemented a Spring based BackEnd for a POS system. It utilizes Spring and Spring Data JPA to handle business logic and data persistence, providing a robust and scalable solution for managing transactions and inventory."
+          technologies={["Spring", "Intellij"]}
+          githubLink="https://github.com/Kavithma-Thushal/POS-BackEnd-Spring"
+          images={posBackendSpringImages}
+          currentImageIndex={currentPOSBackendSpringImage}
+          onNextImage={() => setCurrentPOSBackendSpringImage((prev) => (prev + 1) % posBackendSpringImages.length)}
+          onPreviousImage={() => setCurrentPOSBackendSpringImage((prev) => (prev - 1 + posBackendSpringImages.length) % posBackendSpringImages.length)}
+          onClickImage={() => openModal('posBackendSpring')} />
+
       </div>
 
       <PopUpImage isOpen={isModalOpen} onClose={closeModal}
@@ -423,7 +447,8 @@ export function Projects() {
                         currentProject === 'connect4' ? connect4Images[currentConnect4Image] :
                           currentProject === 'portfoliov2' ? portfolioV2Images[currentPortfolioV2Image] :
                             currentProject === 'studentCLI' ? studentCLIImages[currentStudentCLIImage] :
-                              currentProject === 'posFrontend' ? posFrontendImages[currentPOSFrontendImage] : ''}
+                              currentProject === 'posFrontend' ? posFrontendImages[currentPOSFrontendImage] :
+                                currentProject === 'posBackendSpring' ? posBackendSpringImages[currentPOSBackendSpringImage] : ''}
 
         onNext={currentProject === 'shoeShop' ? () => setCurrentShoeShopImage((prev) => (prev + 1) % shoeShopImages.length) :
           currentProject === 'computerShop' ? () => setCurrentComputerShopImage((prev) => (prev + 1) % computerShopImages.length) :
@@ -436,7 +461,8 @@ export function Projects() {
                         currentProject === 'connect4' ? () => setCurrentConnect4Image((prev) => (prev + 1) % connect4Images.length) :
                           currentProject === 'portfoliov2' ? () => setCurrentPortfolioV2Image((prev) => (prev + 1) % portfolioV2Images.length) :
                             currentProject === 'studentCLI' ? () => setCurrentStudentCLIImage((prev) => (prev + 1) % studentCLIImages.length) :
-                              currentProject === 'posFrontend' ? () => setCurrentPOSFrontendImage((prev) => (prev + 1) % posFrontendImages.length) : () => { }}
+                              currentProject === 'posFrontend' ? () => setCurrentPOSFrontendImage((prev) => (prev + 1) % posFrontendImages.length) :
+                                currentProject === 'posBackendSpring' ? () => setCurrentPOSBackendSpringImage((prev) => (prev + 1) % posBackendSpringImages.length) : () => { }}
 
         onPrevious={currentProject === 'shoeShop' ? () => setCurrentShoeShopImage((prev) => (prev - 1 + shoeShopImages.length) % shoeShopImages.length) :
           currentProject === 'computerShop' ? () => setCurrentComputerShopImage((prev) => (prev - 1 + computerShopImages.length) % computerShopImages.length) :
@@ -449,7 +475,8 @@ export function Projects() {
                         currentProject === 'connect4' ? () => setCurrentConnect4Image((prev) => (prev - 1 + connect4Images.length) % connect4Images.length) :
                           currentProject === 'portfoliov2' ? () => setCurrentPortfolioV2Image((prev) => (prev - 1 + portfolioV2Images.length) % portfolioV2Images.length) :
                             currentProject === 'studentCLI' ? () => setCurrentStudentCLIImage((prev) => (prev - 1 + studentCLIImages.length) % studentCLIImages.length) :
-                              currentProject === 'posFrontend' ? () => setCurrentPOSFrontendImage((prev) => (prev - 1 + posFrontendImages.length) % posFrontendImages.length) : () => { }} />
+                              currentProject === 'posFrontend' ? () => setCurrentPOSFrontendImage((prev) => (prev - 1 + posFrontendImages.length) % posFrontendImages.length) :
+                                currentProject === 'posBackendSpring' ? () => setCurrentPOSBackendSpringImage((prev) => (prev - 1 + posBackendSpringImages.length) % posBackendSpringImages.length) : () => { }} />
 
     </div>
   );
