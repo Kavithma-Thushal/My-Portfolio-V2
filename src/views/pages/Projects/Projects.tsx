@@ -134,6 +134,15 @@ import POSBackendSpringBootCustomer from '../../../assets/images/projects/POS-Ba
 import POSBackendSpringBootItem from '../../../assets/images/projects/POS-BackEnd-SpringBoot/Item.png';
 import POSBackendSpringBootCodes from '../../../assets/images/projects/POS-BackEnd-SpringBoot/Codes.png';
 
+// JavaEE POS
+import JavaEEPOSTheme from '../../../assets/images/projects/JavaEE-POS/Theme.png';
+import JavaEEPOSHome from '../../../assets/images/projects/JavaEE-POS/Home.png';
+import JavaEEPOSCustomer from '../../../assets/images/projects/JavaEE-POS/Customer.png';
+import JavaEEPOSItem from '../../../assets/images/projects/JavaEE-POS/Item.png';
+import JavaEEPOSOrders from '../../../assets/images/projects/JavaEE-POS/Orders.png';
+import JavaEEPOSOrderDetails from '../../../assets/images/projects/JavaEE-POS/OrderDetails.png';
+import JavaEEPOSPOSCodes from '../../../assets/images/projects/JavaEE-POS/Codes.png';
+
 const shoeShopImages = [
   ShoeShopTheme,
   ShoeShopHome,
@@ -280,6 +289,16 @@ const posBackendSpringBootImages = [
   POSBackendSpringBootCodes
 ];
 
+const javaeePOSImages = [
+  JavaEEPOSTheme,
+  JavaEEPOSHome,
+  JavaEEPOSCustomer,
+  JavaEEPOSItem,
+  JavaEEPOSOrders,
+  JavaEEPOSOrderDetails,
+  JavaEEPOSPOSCodes
+];
+
 export function Projects() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentProject, setCurrentProject] = useState('');
@@ -297,6 +316,7 @@ export function Projects() {
   const [currentPOSFrontendImage, setCurrentPOSFrontendImage] = useState(0);
   const [currentPOSBackendSpringImage, setCurrentPOSBackendSpringImage] = useState(0);
   const [currentPOSBackendSpringBootImage, setCurrentPOSBackendSpringBootImage] = useState(0);
+  const [currentJavaEEPOSImage, setCurrentJavaEEPOSImage] = useState(0);
 
   const openModal = (projectType) => {
     setIsModalOpen(true);
@@ -417,19 +437,19 @@ export function Projects() {
           onPreviousImage={() => setCurrentPortfolioV2Image((prev) => (prev - 1 + portfolioV2Images.length) % portfolioV2Images.length)}
           onClickImage={() => openModal('portfoliov2')} />
 
-        <ProjectCard projectName="Student Management System - CLI"
-          description="This is a Command Line Interface (CLI) application designed to manage student information efficiently. This is the Course-Work of Programming Fundermentals."
-          technologies={["Java", "Fundermentals"]}
-          githubLink="https://github.com/Kavithma-Thushal/Student-Management-System-CLI"
-          images={studentCLIImages}
-          currentImageIndex={currentStudentCLIImage}
-          onNextImage={() => setCurrentStudentCLIImage((prev) => (prev + 1) % studentCLIImages.length)}
-          onPreviousImage={() => setCurrentStudentCLIImage((prev) => (prev - 1 + studentCLIImages.length) % studentCLIImages.length)}
-          onClickImage={() => openModal('studentCLI')} />
+        <ProjectCard projectName="POS BackEnd - SpringBoot"
+          description="This is my first simple POS system using Java EE, with a frontend for the user interface and a backend built with Java EE to manage the API."
+          technologies={["HTML", "CSS", "JS", "AJAX", "JavaEE", "MySQL"]}
+          githubLink="https://github.com/Kavithma-Thushal/JavaEE-POS"
+          images={javaeePOSImages}
+          currentImageIndex={currentJavaEEPOSImage}
+          onNextImage={() => setCurrentJavaEEPOSImage((prev) => (prev + 1) % javaeePOSImages.length)}
+          onPreviousImage={() => setCurrentJavaEEPOSImage((prev) => (prev - 1 + javaeePOSImages.length) % javaeePOSImages.length)}
+          onClickImage={() => openModal('javaeePOS')} />
 
         <ProjectCard projectName="POS FrontEnd - React"
           description="This is my first project using React, where I built a simple POS frontend designed to integrate with a backend powered by Java EE, Spring, and Spring Boot."
-          technologies={["React", "VS Code"]}
+          technologies={["React", "Axios", "VS Code"]}
           githubLink="https://github.com/Kavithma-Thushal/POS-FrontEnd-React"
           images={posFrontendImages}
           currentImageIndex={currentPOSFrontendImage}
@@ -439,7 +459,7 @@ export function Projects() {
 
         <ProjectCard projectName="POS BackEnd - Spring"
           description="This is my first project where I've implemented a Spring based BackEnd for a POS system. It utilizes Spring and Spring Data JPA to handle business logic and data persistence, providing a robust and scalable solution for managing transactions and inventory."
-          technologies={["Spring", "Spring Data JPA", "Intellij"]}
+          technologies={["Spring", "Spring Data JPA", "MySQL"]}
           githubLink="https://github.com/Kavithma-Thushal/POS-BackEnd-Spring"
           images={posBackendSpringImages}
           currentImageIndex={currentPOSBackendSpringImage}
@@ -449,13 +469,23 @@ export function Projects() {
 
         <ProjectCard projectName="POS BackEnd - SpringBoot"
           description="This is my first project where I've implemented a SpringBoot based BackEnd for a POS system. It utilizes Spring Boot and Spring Data JPA to handle business logic and data persistence, providing a robust and scalable solution for managing transactions and inventory."
-          technologies={["SpringBoot", "Spring Data JPA", "Intellij"]}
+          technologies={["SpringBoot", "Spring Data JPA", "MySQL"]}
           githubLink="https://github.com/Kavithma-Thushal/POS-BackEnd-SpringBoot"
           images={posBackendSpringBootImages}
           currentImageIndex={currentPOSBackendSpringBootImage}
           onNextImage={() => setCurrentPOSBackendSpringBootImage((prev) => (prev + 1) % posBackendSpringBootImages.length)}
           onPreviousImage={() => setCurrentPOSBackendSpringBootImage((prev) => (prev - 1 + posBackendSpringBootImages.length) % posBackendSpringBootImages.length)}
           onClickImage={() => openModal('posBackendSpringBoot')} />
+
+        <ProjectCard projectName="Student Management System - CLI"
+          description="This is a Command Line Interface (CLI) application designed to manage student information efficiently. This is the Course-Work of Programming Fundermentals."
+          technologies={["Java", "Fundermentals"]}
+          githubLink="https://github.com/Kavithma-Thushal/Student-Management-System-CLI"
+          images={studentCLIImages}
+          currentImageIndex={currentStudentCLIImage}
+          onNextImage={() => setCurrentStudentCLIImage((prev) => (prev + 1) % studentCLIImages.length)}
+          onPreviousImage={() => setCurrentStudentCLIImage((prev) => (prev - 1 + studentCLIImages.length) % studentCLIImages.length)}
+          onClickImage={() => openModal('studentCLI')} />
 
       </div>
 
@@ -473,7 +503,8 @@ export function Projects() {
                             currentProject === 'studentCLI' ? studentCLIImages[currentStudentCLIImage] :
                               currentProject === 'posFrontend' ? posFrontendImages[currentPOSFrontendImage] :
                                 currentProject === 'posBackendSpring' ? posBackendSpringImages[currentPOSBackendSpringImage] :
-                                  currentProject === 'posBackendSpringBoot' ? posBackendSpringBootImages[currentPOSBackendSpringBootImage] : ''}
+                                  currentProject === 'posBackendSpringBoot' ? posBackendSpringBootImages[currentPOSBackendSpringBootImage] :
+                                    currentProject === 'javaeePOS' ? javaeePOSImages[currentJavaEEPOSImage] : ''}
 
         onNext={currentProject === 'shoeShop' ? () => setCurrentShoeShopImage((prev) => (prev + 1) % shoeShopImages.length) :
           currentProject === 'computerShop' ? () => setCurrentComputerShopImage((prev) => (prev + 1) % computerShopImages.length) :
@@ -488,7 +519,8 @@ export function Projects() {
                             currentProject === 'studentCLI' ? () => setCurrentStudentCLIImage((prev) => (prev + 1) % studentCLIImages.length) :
                               currentProject === 'posFrontend' ? () => setCurrentPOSFrontendImage((prev) => (prev + 1) % posFrontendImages.length) :
                                 currentProject === 'posBackendSpring' ? () => setCurrentPOSBackendSpringImage((prev) => (prev + 1) % posBackendSpringImages.length) :
-                                  currentProject === 'posBackendSpringBoot' ? () => setCurrentPOSBackendSpringBootImage((prev) => (prev + 1) % posBackendSpringBootImages.length) : () => { }}
+                                  currentProject === 'posBackendSpringBoot' ? () => setCurrentPOSBackendSpringBootImage((prev) => (prev + 1) % posBackendSpringBootImages.length) :
+                                    currentProject === 'javaeePOS' ? () => setCurrentJavaEEPOSImage((prev) => (prev + 1) % javaeePOSImages.length) : () => { }}
 
         onPrevious={currentProject === 'shoeShop' ? () => setCurrentShoeShopImage((prev) => (prev - 1 + shoeShopImages.length) % shoeShopImages.length) :
           currentProject === 'computerShop' ? () => setCurrentComputerShopImage((prev) => (prev - 1 + computerShopImages.length) % computerShopImages.length) :
@@ -503,7 +535,8 @@ export function Projects() {
                             currentProject === 'studentCLI' ? () => setCurrentStudentCLIImage((prev) => (prev - 1 + studentCLIImages.length) % studentCLIImages.length) :
                               currentProject === 'posFrontend' ? () => setCurrentPOSFrontendImage((prev) => (prev - 1 + posFrontendImages.length) % posFrontendImages.length) :
                                 currentProject === 'posBackendSpring' ? () => setCurrentPOSBackendSpringImage((prev) => (prev - 1 + posBackendSpringImages.length) % posBackendSpringImages.length) :
-                                  currentProject === 'posBackendSpringBoot' ? () => setCurrentPOSBackendSpringBootImage((prev) => (prev - 1 + posBackendSpringBootImages.length) % posBackendSpringBootImages.length) : () => { }} />
+                                  currentProject === 'posBackendSpringBoot' ? () => setCurrentPOSBackendSpringBootImage((prev) => (prev - 1 + posBackendSpringBootImages.length) % posBackendSpringBootImages.length) :
+                                    currentProject === 'javaeePOS' ? () => setCurrentJavaEEPOSImage((prev) => (prev - 1 + javaeePOSImages.length) % javaeePOSImages.length) : () => { }} />
 
     </div>
   );
