@@ -324,7 +324,7 @@ export function Projects() {
           technologies={["React Native", "Android Studio", "VS Code"]}
           githubLink="https://github.com/Kavithma-Thushal/LinkedIn-Clone-App"
           images={linkedInCloneImages}
-          currentImageIndex={currentMernPOSImage}
+          currentImageIndex={currentLinkedinImage}
           onNextImage={() => setCurrentLinkedinImage((prev) => (prev + 1) % linkedInCloneImages.length)}
           onPreviousImage={() => setCurrentLinkedinImage((prev) => (prev - 1 + linkedInCloneImages.length) % linkedInCloneImages.length)}
           onClickImage={() => openModal('linkedinClone')} />
