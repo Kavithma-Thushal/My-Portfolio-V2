@@ -109,6 +109,10 @@ import PortfolioV2Services from '../../../assets/images/projects/My-Portfolio-V2
 import PortfolioV2Contacts from '../../../assets/images/projects/My-Portfolio-V2/Contacts.png';
 import PortfolioV2Codes from '../../../assets/images/projects/My-Portfolio-V2/Codes.png';
 
+// student Management System - CLI
+import StudentManagementTheme from '../../../assets/images/projects/Student-CLI/Theme.png';
+import StudentManagementCodes from '../../../assets/images/projects/Student-CLI/Codes.png';
+
 const shoeShopImages = [
   ShoeShopTheme,
   ShoeShopHome,
@@ -226,6 +230,11 @@ const portfolioV2Images = [
   PortfolioV2Codes,
 ];
 
+const studentCLIImages = [
+  StudentManagementTheme,
+  StudentManagementCodes
+];
+
 export function Projects() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentProject, setCurrentProject] = useState('');
@@ -239,6 +248,7 @@ export function Projects() {
   const [currentMernPOSImage, setCurrentMernPOSImage] = useState(0);
   const [currentConnect4Image, setCurrentConnect4Image] = useState(0);
   const [currentPortfolioV2Image, setCurrentPortfolioV2Image] = useState(0);
+  const [currentStudentCLIImage, setCurrentStudentCLIImage] = useState(0);
 
   const openModal = (projectType) => {
     setIsModalOpen(true);
@@ -359,6 +369,16 @@ export function Projects() {
           onPreviousImage={() => setCurrentPortfolioV2Image((prev) => (prev - 1 + portfolioV2Images.length) % portfolioV2Images.length)}
           onClickImage={() => openModal('portfoliov2')} />
 
+        <ProjectCard projectName="Student Management System - CLI"
+          description="This is a Command Line Interface (CLI) application designed to manage student information efficiently. This is the Course-Work of Programming Fundermentals."
+          technologies={["Java", "Fundermentals"]}
+          githubLink="https://github.com/Kavithma-Thushal/Student-Management-System-CLI"
+          images={studentCLIImages}
+          currentImageIndex={currentStudentCLIImage}
+          onNextImage={() => setCurrentStudentCLIImage((prev) => (prev + 1) % studentCLIImages.length)}
+          onPreviousImage={() => setCurrentStudentCLIImage((prev) => (prev - 1 + studentCLIImages.length) % studentCLIImages.length)}
+          onClickImage={() => openModal('studentCLI')} />
+
       </div>
 
       <PopUpImage isOpen={isModalOpen} onClose={closeModal}
@@ -371,7 +391,8 @@ export function Projects() {
                     currentProject === 'linkedinClone' ? linkedInCloneImages[currentLinkedinImage] :
                       currentProject === 'mernPOS' ? mernPOSImages[currentMernPOSImage] :
                         currentProject === 'connect4' ? connect4Images[currentConnect4Image] :
-                          currentProject === 'portfoliov2' ? portfolioV2Images[currentPortfolioV2Image] : ''}
+                          currentProject === 'portfoliov2' ? portfolioV2Images[currentPortfolioV2Image] :
+                            currentProject === 'studentCLI' ? studentCLIImages[currentStudentCLIImage] : ''}
 
         onNext={currentProject === 'shoeShop' ? () => setCurrentShoeShopImage((prev) => (prev + 1) % shoeShopImages.length) :
           currentProject === 'computerShop' ? () => setCurrentComputerShopImage((prev) => (prev + 1) % computerShopImages.length) :
@@ -382,7 +403,8 @@ export function Projects() {
                     currentProject === 'linkedinClone' ? () => setCurrentLinkedinImage((prev) => (prev + 1) % linkedInCloneImages.length) :
                       currentProject === 'mernPOS' ? () => setCurrentMernPOSImage((prev) => (prev + 1) % mernPOSImages.length) :
                         currentProject === 'connect4' ? () => setCurrentConnect4Image((prev) => (prev + 1) % connect4Images.length) :
-                          currentProject === 'portfoliov2' ? () => setCurrentPortfolioV2Image((prev) => (prev + 1) % portfolioV2Images.length) : () => { }}
+                          currentProject === 'portfoliov2' ? () => setCurrentPortfolioV2Image((prev) => (prev + 1) % portfolioV2Images.length) :
+                            currentProject === 'studentCLI' ? () => setCurrentStudentCLIImage((prev) => (prev + 1) % studentCLIImages.length) : () => { }}
 
         onPrevious={currentProject === 'shoeShop' ? () => setCurrentShoeShopImage((prev) => (prev - 1 + shoeShopImages.length) % shoeShopImages.length) :
           currentProject === 'computerShop' ? () => setCurrentComputerShopImage((prev) => (prev - 1 + computerShopImages.length) % computerShopImages.length) :
@@ -393,7 +415,8 @@ export function Projects() {
                     currentProject === 'linkedinClone' ? () => setCurrentLinkedinImage((prev) => (prev - 1 + linkedInCloneImages.length) % linkedInCloneImages.length) :
                       currentProject === 'mernPOS' ? () => setCurrentMernPOSImage((prev) => (prev - 1 + mernPOSImages.length) % mernPOSImages.length) :
                         currentProject === 'connect4' ? () => setCurrentConnect4Image((prev) => (prev - 1 + connect4Images.length) % connect4Images.length) :
-                          currentProject === 'portfoliov2' ? () => setCurrentPortfolioV2Image((prev) => (prev - 1 + portfolioV2Images.length) % portfolioV2Images.length) : () => { }} />
+                          currentProject === 'portfoliov2' ? () => setCurrentPortfolioV2Image((prev) => (prev - 1 + portfolioV2Images.length) % portfolioV2Images.length) :
+                            currentProject === 'studentCLI' ? () => setCurrentStudentCLIImage((prev) => (prev - 1 + studentCLIImages.length) % studentCLIImages.length) : () => { }} />
 
     </div>
   );
