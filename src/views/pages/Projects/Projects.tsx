@@ -3,7 +3,7 @@ import PopUpImage from './PopUpImage';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 
 // Shoe Shop Management System
-import ShoeShopTheme from '../../../assets/images/projects/Shoe-Shop/Theme.png';
+// import ShoeShopTheme from '../../../assets/images/projects/Shoe-Shop/Theme.png';
 import ShoeShopHome from '../../../assets/images/projects/Shoe-Shop/Home.png';
 import ShoeShopSignUp from '../../../assets/images/projects/Shoe-Shop/SignUp.png';
 import ShoeShopSignIn from '../../../assets/images/projects/Shoe-Shop/SignIn.png';
@@ -18,7 +18,7 @@ import ShoeShopUser from '../../../assets/images/projects/Shoe-Shop/User.png';
 import ShoeShopCodes from '../../../assets/images/projects/Shoe-Shop/Codes.png';
 
 // Computer Shop Management System
-import ComputerShopTheme from '../../../assets/images/projects/Computer-Shop/Theme.png';
+// import ComputerShopTheme from '../../../assets/images/projects/Computer-Shop/Theme.png';
 import ComputerShopLogin from '../../../assets/images/projects/Computer-Shop/Login.png';
 import ComputerShopAdminDashboard from '../../../assets/images/projects/Computer-Shop/Admin-Dashboard.png';
 import ComputerShopCustomer from '../../../assets/images/projects/Computer-Shop/Customer.png';
@@ -31,7 +31,7 @@ import ComputerShopCustomerReport from '../../../assets/images/projects/Computer
 import ComputerShopCodes from '../../../assets/images/projects/Computer-Shop/Codes.png';
 
 // Hostel Management System
-import HostelManagementTheme from '../../../assets/images/projects/Hostel-Management/Theme.png';
+// import HostelManagementTheme from '../../../assets/images/projects/Hostel-Management/Theme.png';
 import HostelManagementHome from '../../../assets/images/projects/Hostel-Management/Home.png';
 import HostelManagementAdminDashboard from '../../../assets/images/projects/Hostel-Management/Admin-Dashboard.png';
 import HostelManagementStudents from '../../../assets/images/projects/Hostel-Management/Students.png';
@@ -43,14 +43,14 @@ import HostelManagementReports from '../../../assets/images/projects/Hostel-Mana
 import HostelManagementCodes from '../../../assets/images/projects/Hostel-Management/Codes.png';
 
 // Chat Application
-import ChatRoomTheme from '../../../assets/images/projects/Chat-Application/Theme.png';
+// import ChatRoomTheme from '../../../assets/images/projects/Chat-Application/Theme.png';
 import ChatRoom1 from '../../../assets/images/projects/Chat-Application/Chat-Room-1.png';
 import ChatRoom2 from '../../../assets/images/projects/Chat-Application/Chat-Room-2.png';
 import ChatApplicationCodes from '../../../assets/images/projects/Chat-Application/Codes.png';
 import ChatApplicationLiveChatRoom from '../../../assets/images/projects/Chat-Application/Live-Chat-Room.gif';
 
 // Shoe Shop Landing Page
-import ShoeShopLandingTheme from '../../../assets/images/projects/Shoe-Shop-Landing/Theme.png';
+// import ShoeShopLandingTheme from '../../../assets/images/projects/Shoe-Shop-Landing/Theme.png';
 import ShoeShopLandingHome from '../../../assets/images/projects/Shoe-Shop-Landing/Home.png';
 import ShoeShopLandingAbout from '../../../assets/images/projects/Shoe-Shop-Landing/About.png';
 import ShoeShopLandingShoeCollection1 from '../../../assets/images/projects/Shoe-Shop-Landing/Shoe-Collection-1.png';
@@ -62,7 +62,7 @@ import ShoeShopLandingContacts from '../../../assets/images/projects/Shoe-Shop-L
 import ShoeShopLandingCodes from '../../../assets/images/projects/Shoe-Shop-Landing/Codes.png';
 
 // Portfolio v1
-import PortfolioTheme from '../../../assets/images/projects/My-Portfolio/Theme.png';
+// import PortfolioTheme from '../../../assets/images/projects/My-Portfolio/Theme.png';
 import PortfolioHome from '../../../assets/images/projects/My-Portfolio/Home.png';
 import PortfolioAbout from '../../../assets/images/projects/My-Portfolio/About.png';
 import PortfolioSkills from '../../../assets/images/projects/My-Portfolio/Skills.png';
@@ -76,7 +76,7 @@ import PortfolioContact2 from '../../../assets/images/projects/My-Portfolio/Cont
 import PortfolioCodes from '../../../assets/images/projects/My-Portfolio/Codes.png';
 
 // LinkedIn Clone
-import LinkedInCloneTheme from '../../../assets/images/projects/LinkedIn-Clone/Theme.png';
+// import LinkedInCloneTheme from '../../../assets/images/projects/LinkedIn-Clone/Theme.png';
 import LinkedInCloneHome from '../../../assets/images/projects/LinkedIn-Clone/Home.png';
 import LinkedInCloneNetwork from '../../../assets/images/projects/LinkedIn-Clone/Network.png';
 import LinkedInClonePost from '../../../assets/images/projects/LinkedIn-Clone/Post.png';
@@ -86,19 +86,19 @@ import LinkedInCloneProfile from '../../../assets/images/projects/LinkedIn-Clone
 import LinkedInCloneCodes from '../../../assets/images/projects/LinkedIn-Clone/Codes.png';
 
 // MERN POS System
-import MERNPOSTheme from '../../../assets/images/projects/MERN-POS/Theme.png';
+// import MERNPOSTheme from '../../../assets/images/projects/MERN-POS/Theme.png';
 import MERNPOSCustomer from '../../../assets/images/projects/MERN-POS/Customer.png';
 import MERNPOSItem from '../../../assets/images/projects/MERN-POS/Item.png';
 import MERNPOSCodes from '../../../assets/images/projects/MERN-POS/Codes.png';
 
 // Connect 4 Game
-import Connect4Theme from '../../../assets/images/projects/Connect-4-Game/Theme.png';
+// import Connect4Theme from '../../../assets/images/projects/Connect-4-Game/Theme.png';
 import Connect4UserName from '../../../assets/images/projects/Connect-4-Game/User-Name.png';
 import Connect4GamePlay from '../../../assets/images/projects/Connect-4-Game/Game-Play.png';
 import Connect4Codes from '../../../assets/images/projects/Connect-4-Game/Codes.png';
 
 // Portfolio v2
-import PortfolioV2Theme from '../../../assets/images/projects/My-Portfolio-V2/Theme.png';
+// import PortfolioV2Theme from '../../../assets/images/projects/My-Portfolio-V2/Theme.png';
 import PortfolioV2Home from '../../../assets/images/projects/My-Portfolio-V2/Home.png';
 import PortfolioV2About from '../../../assets/images/projects/My-Portfolio-V2/About.png';
 import PortfolioV2Skills from '../../../assets/images/projects/My-Portfolio-V2/Skills.png';
@@ -110,11 +110,11 @@ import PortfolioV2Contacts from '../../../assets/images/projects/My-Portfolio-V2
 import PortfolioV2Codes from '../../../assets/images/projects/My-Portfolio-V2/Codes.png';
 
 // student Management System - CLI
-import StudentManagementTheme from '../../../assets/images/projects/Student-CLI/Theme.png';
+// import StudentManagementTheme from '../../../assets/images/projects/Student-CLI/Theme.png';
 import StudentManagementCodes from '../../../assets/images/projects/Student-CLI/Codes.png';
 
 // POS FrontEnd - React
-import POSFrontendTheme from '../../../assets/images/projects/POS-FrontEnd-React/Theme.png';
+// import POSFrontendTheme from '../../../assets/images/projects/POS-FrontEnd-React/Theme.png';
 import POSFrontendHome from '../../../assets/images/projects/POS-FrontEnd-React/Home.png';
 import POSFrontendCustomer from '../../../assets/images/projects/POS-FrontEnd-React/Customer.png';
 import POSFrontendItem from '../../../assets/images/projects/POS-FrontEnd-React/Item.png';
@@ -123,19 +123,19 @@ import POSFrontendOrderDetails from '../../../assets/images/projects/POS-FrontEn
 import POSFrontendCodes from '../../../assets/images/projects/POS-FrontEnd-React/Codes.png';
 
 // POS BackEnd - Spring
-import POSBackendSpringTheme from '../../../assets/images/projects/POS-BackEnd-Spring/Theme.png';
+// import POSBackendSpringTheme from '../../../assets/images/projects/POS-BackEnd-Spring/Theme.png';
 import POSBackendSpringCustomer from '../../../assets/images/projects/POS-BackEnd-Spring/Customer.png';
 import POSBackendSpringItem from '../../../assets/images/projects/POS-BackEnd-Spring/Item.png';
 import POSBackendSpringCodes from '../../../assets/images/projects/POS-BackEnd-Spring/Codes.png';
 
 // POS BackEnd - SpringBoot
-import POSBackendSpringBootTheme from '../../../assets/images/projects/POS-BackEnd-SpringBoot/Theme.png';
+// import POSBackendSpringBootTheme from '../../../assets/images/projects/POS-BackEnd-SpringBoot/Theme.png';
 import POSBackendSpringBootCustomer from '../../../assets/images/projects/POS-BackEnd-SpringBoot/Customer.png';
 import POSBackendSpringBootItem from '../../../assets/images/projects/POS-BackEnd-SpringBoot/Item.png';
 import POSBackendSpringBootCodes from '../../../assets/images/projects/POS-BackEnd-SpringBoot/Codes.png';
 
 // JavaEE POS
-import JavaEEPOSTheme from '../../../assets/images/projects/JavaEE-POS/Theme.png';
+// import JavaEEPOSTheme from '../../../assets/images/projects/JavaEE-POS/Theme.png';
 import JavaEEPOSHome from '../../../assets/images/projects/JavaEE-POS/Home.png';
 import JavaEEPOSCustomer from '../../../assets/images/projects/JavaEE-POS/Customer.png';
 import JavaEEPOSItem from '../../../assets/images/projects/JavaEE-POS/Item.png';
