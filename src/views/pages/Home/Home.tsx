@@ -1,3 +1,5 @@
+import CV from "../../../assets/pdf/Kavithma-Thushal-Resume.pdf";
+
 export function Home() {
     return (
         <div className="flex items-center justify-center min-h-screen bg-darkBlue text-neonBlue">
@@ -8,7 +10,7 @@ export function Home() {
                 <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
                     <a href="/My-Portfolio-V2/about" className="bg-neonBlue text-darkBlue px-6 py-3 rounded-lg font-semibold shadow-lg 
                     hover:scale-105 transition duration-300">About Me</a>
-                    <a download href="src/assets/pdf/Kavithma-Thushal-Resume.pdf" className="bg-darkBlue text-neonBlue border 
+                    <a href={CV} download="Kavithma-Thushal-Resume" className="bg-darkBlue text-neonBlue border 
                     border-neonBlue px-6 py-3 rounded-lg font-semibold shadow-lg hover:scale-105 transition duration-300">Download CV</a>
                 </div>
             </div>
