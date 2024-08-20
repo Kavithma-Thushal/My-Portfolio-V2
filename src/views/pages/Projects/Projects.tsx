@@ -144,7 +144,7 @@ import JavaEEPOSOrderDetails from '../../../assets/images/projects/JavaEE-POS/Or
 import JavaEEPOSPOSCodes from '../../../assets/images/projects/JavaEE-POS/Codes.png';
 
 const shoeShopImages = [
-  ShoeShopTheme,
+  // ShoeShopTheme,
   ShoeShopHome,
   ShoeShopSignUp,
   ShoeShopSignIn,
@@ -160,7 +160,7 @@ const shoeShopImages = [
 ];
 
 const computerShopImages = [
-  ComputerShopTheme,
+  // ComputerShopTheme,
   ComputerShopLogin,
   ComputerShopAdminDashboard,
   ComputerShopCustomer,
@@ -174,7 +174,7 @@ const computerShopImages = [
 ];
 
 const hostelManagementImages = [
-  HostelManagementTheme,
+  // HostelManagementTheme,
   HostelManagementHome,
   HostelManagementAdminDashboard,
   HostelManagementStudents,
@@ -187,7 +187,7 @@ const hostelManagementImages = [
 ];
 
 const chatApplicationImages = [
-  ChatRoomTheme,
+  // ChatRoomTheme,
   ChatRoom1,
   ChatRoom2,
   ChatApplicationCodes,
@@ -195,7 +195,7 @@ const chatApplicationImages = [
 ];
 
 const shoeShopLandingImages = [
-  ShoeShopLandingTheme,
+  // ShoeShopLandingTheme,
   ShoeShopLandingHome,
   ShoeShopLandingAbout,
   ShoeShopLandingShoeCollection1,
@@ -208,7 +208,7 @@ const shoeShopLandingImages = [
 ];
 
 const portfolioImages = [
-  PortfolioTheme,
+  // PortfolioTheme,
   PortfolioHome,
   PortfolioAbout,
   PortfolioSkills,
@@ -223,7 +223,7 @@ const portfolioImages = [
 ];
 
 const linkedInCloneImages = [
-  LinkedInCloneTheme,
+  // LinkedInCloneTheme,
   LinkedInCloneHome,
   LinkedInCloneNetwork,
   LinkedInClonePost,
@@ -234,21 +234,21 @@ const linkedInCloneImages = [
 ];
 
 const mernPOSImages = [
-  MERNPOSTheme,
+  // MERNPOSTheme,
   MERNPOSCustomer,
   MERNPOSItem,
   MERNPOSCodes,
 ];
 
 const connect4Images = [
-  Connect4Theme,
+  // Connect4Theme,
   Connect4UserName,
   Connect4GamePlay,
   Connect4Codes,
 ];
 
 const portfolioV2Images = [
-  PortfolioV2Theme,
+  // PortfolioV2Theme,
   PortfolioV2Home,
   PortfolioV2About,
   PortfolioV2Skills,
@@ -261,12 +261,12 @@ const portfolioV2Images = [
 ];
 
 const studentCLIImages = [
-  StudentManagementTheme,
+  // StudentManagementTheme,
   StudentManagementCodes
 ];
 
 const posFrontendImages = [
-  POSFrontendTheme,
+  // POSFrontendTheme,
   POSFrontendHome,
   POSFrontendCustomer,
   POSFrontendItem,
@@ -276,21 +276,21 @@ const posFrontendImages = [
 ];
 
 const posBackendSpringImages = [
-  POSBackendSpringTheme,
+  // POSBackendSpringTheme,
   POSBackendSpringCustomer,
   POSBackendSpringItem,
   POSBackendSpringCodes
 ];
 
 const posBackendSpringBootImages = [
-  POSBackendSpringBootTheme,
+  // POSBackendSpringBootTheme,
   POSBackendSpringBootCustomer,
   POSBackendSpringBootItem,
   POSBackendSpringBootCodes
 ];
 
 const javaeePOSImages = [
-  JavaEEPOSTheme,
+  // JavaEEPOSTheme,
   JavaEEPOSHome,
   JavaEEPOSCustomer,
   JavaEEPOSItem,
@@ -387,16 +387,6 @@ export function Projects() {
           onPreviousImage={() => setCurrentShoeShopLandingImage((prev) => (prev - 1 + shoeShopLandingImages.length) % shoeShopLandingImages.length)}
           onClickImage={() => openModal('shoeShopLanding')} />
 
-        <ProjectCard projectName="My Portfolio"
-          description="My Portfolio highlights my top projects and skills, showcasing my creativity, dedication, and growth. It reflects my approach to problem-solving and continuous learning, offering insights into my innovative solutions and commitment to excellence."
-          technologies={["HTML", "CSS", "JavaScript", "Figma"]}
-          githubLink="https://github.com/Kavithma-Thushal/MyPortfolio"
-          images={portfolioImages}
-          currentImageIndex={currentPortfolioImage}
-          onNextImage={() => setCurrentPortfolioImage((prev) => (prev + 1) % portfolioImages.length)}
-          onPreviousImage={() => setCurrentPortfolioImage((prev) => (prev - 1 + portfolioImages.length) % portfolioImages.length)}
-          onClickImage={() => openModal('portfolio')} />
-
         <ProjectCard projectName="LinkedIn Clone - Mobile Application"
           description="This is my First Mobile Application: LinkedIn Clone App, developed using React Native. I focused on replicating the core functionalities and UI of LinkedIn to ensure a user-friendly experience. An Android Emulator was used for testing and debugging, which was essential in fine-tuning the app's performance and usability."
           technologies={["React Native", "Android Studio", "VS Code"]}
@@ -417,15 +407,15 @@ export function Projects() {
           onPreviousImage={() => setCurrentMernPOSImage((prev) => (prev - 1 + mernPOSImages.length) % mernPOSImages.length)}
           onClickImage={() => openModal('mernPOS')} />
 
-        <ProjectCard projectName="Connect 4 Game"
-          description="I created this Connect 4 game as a way to deepen my understanding of Object-Oriented Programming (OOP) in Java. Through this project, I explored the principles of encapsulation, inheritance, polymorphism and abstraction, all while bringing a classic game to life."
-          technologies={["Java", "JavaFX", "OOP"]}
-          githubLink="https://github.com/Kavithma-Thushal/connect-four-assignment"
-          images={connect4Images}
-          currentImageIndex={currentConnect4Image}
-          onNextImage={() => setCurrentConnect4Image((prev) => (prev + 1) % connect4Images.length)}
-          onPreviousImage={() => setCurrentConnect4Image((prev) => (prev - 1 + connect4Images.length) % connect4Images.length)}
-          onClickImage={() => openModal('connect4')} />
+        <ProjectCard projectName="My Portfolio"
+          description="My Portfolio highlights my top projects and skills, showcasing my creativity, dedication, and growth. It reflects my approach to problem-solving and continuous learning, offering insights into my innovative solutions and commitment to excellence."
+          technologies={["HTML", "CSS", "JavaScript", "Figma"]}
+          githubLink="https://github.com/Kavithma-Thushal/MyPortfolio"
+          images={portfolioImages}
+          currentImageIndex={currentPortfolioImage}
+          onNextImage={() => setCurrentPortfolioImage((prev) => (prev + 1) % portfolioImages.length)}
+          onPreviousImage={() => setCurrentPortfolioImage((prev) => (prev - 1 + portfolioImages.length) % portfolioImages.length)}
+          onClickImage={() => openModal('portfolio')} />
 
         <ProjectCard projectName="My Portfolio V2"
           description="Dive into a showcase of my diverse skill set, meticulously crafted using React and Vite. This portfolio highlights my expertise in creating dynamic and responsive web applications with a modern touch."
@@ -437,7 +427,17 @@ export function Projects() {
           onPreviousImage={() => setCurrentPortfolioV2Image((prev) => (prev - 1 + portfolioV2Images.length) % portfolioV2Images.length)}
           onClickImage={() => openModal('portfoliov2')} />
 
-        <ProjectCard projectName="POS BackEnd - SpringBoot"
+        <ProjectCard projectName="Connect 4 Game"
+          description="I created this Connect 4 game as a way to deepen my understanding of Object-Oriented Programming (OOP) in Java. Through this project, I explored the principles of encapsulation, inheritance, polymorphism and abstraction, all while bringing a classic game to life."
+          technologies={["Java", "JavaFX", "OOP"]}
+          githubLink="https://github.com/Kavithma-Thushal/connect-four-assignment"
+          images={connect4Images}
+          currentImageIndex={currentConnect4Image}
+          onNextImage={() => setCurrentConnect4Image((prev) => (prev + 1) % connect4Images.length)}
+          onPreviousImage={() => setCurrentConnect4Image((prev) => (prev - 1 + connect4Images.length) % connect4Images.length)}
+          onClickImage={() => openModal('connect4')} />
+
+        <ProjectCard projectName="JavaEE POS"
           description="This is my first simple POS system using Java EE, with a frontend for the user interface and a backend built with Java EE to manage the API."
           technologies={["HTML", "CSS", "JS", "AJAX", "JavaEE", "MySQL"]}
           githubLink="https://github.com/Kavithma-Thushal/JavaEE-POS"
