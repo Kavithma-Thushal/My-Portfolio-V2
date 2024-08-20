@@ -113,6 +113,15 @@ import PortfolioV2Codes from '../../../assets/images/projects/My-Portfolio-V2/Co
 import StudentManagementTheme from '../../../assets/images/projects/Student-CLI/Theme.png';
 import StudentManagementCodes from '../../../assets/images/projects/Student-CLI/Codes.png';
 
+// POS FrontEnd - React
+import POSFrontendTheme from '../../../assets/images/projects/POS-FrontEnd-React/Theme.png';
+import POSFrontendHome from '../../../assets/images/projects/POS-FrontEnd-React/Home.png';
+import POSFrontendCustomer from '../../../assets/images/projects/POS-FrontEnd-React/Customer.png';
+import POSFrontendItem from '../../../assets/images/projects/POS-FrontEnd-React/Item.png';
+import POSFrontendOrder from '../../../assets/images/projects/POS-FrontEnd-React/Order.png';
+import POSFrontendOrderDetails from '../../../assets/images/projects/POS-FrontEnd-React/OrderDetails.png';
+import POSFrontendCodes from '../../../assets/images/projects/POS-FrontEnd-React/Codes.png';
+
 const shoeShopImages = [
   ShoeShopTheme,
   ShoeShopHome,
@@ -235,6 +244,16 @@ const studentCLIImages = [
   StudentManagementCodes
 ];
 
+const posFrontendImages = [
+  POSFrontendTheme,
+  POSFrontendHome,
+  POSFrontendCustomer,
+  POSFrontendItem,
+  POSFrontendOrder,
+  POSFrontendOrderDetails,
+  POSFrontendCodes
+];
+
 export function Projects() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentProject, setCurrentProject] = useState('');
@@ -249,6 +268,7 @@ export function Projects() {
   const [currentConnect4Image, setCurrentConnect4Image] = useState(0);
   const [currentPortfolioV2Image, setCurrentPortfolioV2Image] = useState(0);
   const [currentStudentCLIImage, setCurrentStudentCLIImage] = useState(0);
+  const [currentPOSFrontendImage, setCurrentPOSFrontendImage] = useState(0);
 
   const openModal = (projectType) => {
     setIsModalOpen(true);
@@ -379,6 +399,16 @@ export function Projects() {
           onPreviousImage={() => setCurrentStudentCLIImage((prev) => (prev - 1 + studentCLIImages.length) % studentCLIImages.length)}
           onClickImage={() => openModal('studentCLI')} />
 
+        <ProjectCard projectName="POS FrontEnd - React"
+          description="This is my first project using React, where I built a simple POS frontend designed to integrate with a backend powered by Java EE, Spring, and Spring Boot."
+          technologies={["React", "VS Code"]}
+          githubLink="https://github.com/Kavithma-Thushal/POS-FrontEnd-React"
+          images={posFrontendImages}
+          currentImageIndex={currentPOSFrontendImage}
+          onNextImage={() => setCurrentPOSFrontendImage((prev) => (prev + 1) % posFrontendImages.length)}
+          onPreviousImage={() => setCurrentPOSFrontendImage((prev) => (prev - 1 + posFrontendImages.length) % posFrontendImages.length)}
+          onClickImage={() => openModal('posFrontend')} />
+
       </div>
 
       <PopUpImage isOpen={isModalOpen} onClose={closeModal}
@@ -392,7 +422,8 @@ export function Projects() {
                       currentProject === 'mernPOS' ? mernPOSImages[currentMernPOSImage] :
                         currentProject === 'connect4' ? connect4Images[currentConnect4Image] :
                           currentProject === 'portfoliov2' ? portfolioV2Images[currentPortfolioV2Image] :
-                            currentProject === 'studentCLI' ? studentCLIImages[currentStudentCLIImage] : ''}
+                            currentProject === 'studentCLI' ? studentCLIImages[currentStudentCLIImage] :
+                              currentProject === 'posFrontend' ? posFrontendImages[currentPOSFrontendImage] : ''}
 
         onNext={currentProject === 'shoeShop' ? () => setCurrentShoeShopImage((prev) => (prev + 1) % shoeShopImages.length) :
           currentProject === 'computerShop' ? () => setCurrentComputerShopImage((prev) => (prev + 1) % computerShopImages.length) :
@@ -404,7 +435,8 @@ export function Projects() {
                       currentProject === 'mernPOS' ? () => setCurrentMernPOSImage((prev) => (prev + 1) % mernPOSImages.length) :
                         currentProject === 'connect4' ? () => setCurrentConnect4Image((prev) => (prev + 1) % connect4Images.length) :
                           currentProject === 'portfoliov2' ? () => setCurrentPortfolioV2Image((prev) => (prev + 1) % portfolioV2Images.length) :
-                            currentProject === 'studentCLI' ? () => setCurrentStudentCLIImage((prev) => (prev + 1) % studentCLIImages.length) : () => { }}
+                            currentProject === 'studentCLI' ? () => setCurrentStudentCLIImage((prev) => (prev + 1) % studentCLIImages.length) :
+                              currentProject === 'posFrontend' ? () => setCurrentPOSFrontendImage((prev) => (prev + 1) % posFrontendImages.length) : () => { }}
 
         onPrevious={currentProject === 'shoeShop' ? () => setCurrentShoeShopImage((prev) => (prev - 1 + shoeShopImages.length) % shoeShopImages.length) :
           currentProject === 'computerShop' ? () => setCurrentComputerShopImage((prev) => (prev - 1 + computerShopImages.length) % computerShopImages.length) :
@@ -416,7 +448,8 @@ export function Projects() {
                       currentProject === 'mernPOS' ? () => setCurrentMernPOSImage((prev) => (prev - 1 + mernPOSImages.length) % mernPOSImages.length) :
                         currentProject === 'connect4' ? () => setCurrentConnect4Image((prev) => (prev - 1 + connect4Images.length) % connect4Images.length) :
                           currentProject === 'portfoliov2' ? () => setCurrentPortfolioV2Image((prev) => (prev - 1 + portfolioV2Images.length) % portfolioV2Images.length) :
-                            currentProject === 'studentCLI' ? () => setCurrentStudentCLIImage((prev) => (prev - 1 + studentCLIImages.length) % studentCLIImages.length) : () => { }} />
+                            currentProject === 'studentCLI' ? () => setCurrentStudentCLIImage((prev) => (prev - 1 + studentCLIImages.length) % studentCLIImages.length) :
+                              currentProject === 'posFrontend' ? () => setCurrentPOSFrontendImage((prev) => (prev - 1 + posFrontendImages.length) % posFrontendImages.length) : () => { }} />
 
     </div>
   );
