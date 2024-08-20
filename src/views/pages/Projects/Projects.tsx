@@ -2,121 +2,214 @@ import { useState } from 'react';
 import PopUpImage from './PopUpImage';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 
+// Shoe Shop Management System
+import ShoeShopHome from '../../../assets/images/projects/Shoe-Shop/Home.png';
+import ShoeShopSignUp from '../../../assets/images/projects/Shoe-Shop/SignUp.png';
+import ShoeShopSignIn from '../../../assets/images/projects/Shoe-Shop/SignIn.png';
+import ShoeShopAdminDashboard from '../../../assets/images/projects/Shoe-Shop/Admin-Dashboard.png';
+import ShoeShopCustomer from '../../../assets/images/projects/Shoe-Shop/Customer.png';
+import ShoeShopEmployee from '../../../assets/images/projects/Shoe-Shop/Employee.png';
+import ShoeShopSupplier from '../../../assets/images/projects/Shoe-Shop/Supplier.png';
+import ShoeShopInventory from '../../../assets/images/projects/Shoe-Shop/Inventory.png';
+import ShoeShopSales from '../../../assets/images/projects/Shoe-Shop/Sales.png';
+import ShoeShopAdmin from '../../../assets/images/projects/Shoe-Shop/Admin.png';
+import ShoeShopUser from '../../../assets/images/projects/Shoe-Shop/User.png';
+import ShoeShopCodes from '../../../assets/images/projects/Shoe-Shop/Codes.png';
+
+// Computer Shop Management System
+import ComputerShopLogin from '../../../assets/images/projects/Computer-Shop/Login.png';
+import ComputerShopAdminDashboard from '../../../assets/images/projects/Computer-Shop/Admin-Dashboard.png';
+import ComputerShopCustomer from '../../../assets/images/projects/Computer-Shop/Customer.png';
+import ComputerShopSupplier from '../../../assets/images/projects/Computer-Shop/Supplier.png';
+import ComputerShopStore from '../../../assets/images/projects/Computer-Shop/Store.png';
+import ComputerShopSalary from '../../../assets/images/projects/Computer-Shop/Salary.png';
+import ComputerShopOrders from '../../../assets/images/projects/Computer-Shop/Orders.png';
+import ComputerShopReports from '../../../assets/images/projects/Computer-Shop/Reports.png';
+import ComputerShopCustomerReport from '../../../assets/images/projects/Computer-Shop/Customer-Report.png';
+import ComputerShopCodes from '../../../assets/images/projects/Computer-Shop/Codes.png';
+
+// Hostel Management System
+import HostelManagementHome from '../../../assets/images/projects/Hostel-Management/Home.png';
+import HostelManagementAdminDashboard from '../../../assets/images/projects/Hostel-Management/Admin-Dashboard.png';
+import HostelManagementStudents from '../../../assets/images/projects/Hostel-Management/Students.png';
+import HostelManagementRooms from '../../../assets/images/projects/Hostel-Management/Rooms.png';
+import HostelManagementReservation from '../../../assets/images/projects/Hostel-Management/Reservation.png';
+import HostelManagementKeyMoney from '../../../assets/images/projects/Hostel-Management/Key-Money.png';
+import HostelManagementUser from '../../../assets/images/projects/Hostel-Management/User.png';
+import HostelManagementReports from '../../../assets/images/projects/Hostel-Management/Reports.png';
+import HostelManagementCodes from '../../../assets/images/projects/Hostel-Management/Codes.png';
+
+// Chat Application
+import ChatRoom1 from '../../../assets/images/projects/Chat-Application/Chat-Room-1.png';
+import ChatRoom2 from '../../../assets/images/projects/Chat-Application/Chat-Room-2.png';
+import ChatApplicationCodes from '../../../assets/images/projects/Chat-Application/Codes.png';
+import ChatApplicationLiveChatRoom from '../../../assets/images/projects/Chat-Application/Live-Chat-Room.gif';
+
+// Shoe Shop Landing Page
+import ShoeShopLandingHome from '../../../assets/images/projects/Shoe-Shop-Landing/Home.png';
+import ShoeShopLandingAbout from '../../../assets/images/projects/Shoe-Shop-Landing/About.png';
+import ShoeShopLandingShoeCollection1 from '../../../assets/images/projects/Shoe-Shop-Landing/Shoe-Collection-1.png';
+import ShoeShopLandingShoeCollection2 from '../../../assets/images/projects/Shoe-Shop-Landing/Shoe-Collection-2.png';
+import ShoeShopLandingCTA from '../../../assets/images/projects/Shoe-Shop-Landing/CTA.png';
+import ShoeShopLandingReviews from '../../../assets/images/projects/Shoe-Shop-Landing/Reviews.png';
+import ShoeShopLandingDiscount from '../../../assets/images/projects/Shoe-Shop-Landing/Discount.png';
+import ShoeShopLandingContacts from '../../../assets/images/projects/Shoe-Shop-Landing/Contacts.png';
+import ShoeShopLandingCodes from '../../../assets/images/projects/Shoe-Shop-Landing/Codes.png';
+
+// Portfolio v1
+import PortfolioHome from '../../../assets/images/projects/My-Portfolio/Home.png';
+import PortfolioAbout from '../../../assets/images/projects/My-Portfolio/About.png';
+import PortfolioSkills from '../../../assets/images/projects/My-Portfolio/Skills.png';
+import PortfolioServices from '../../../assets/images/projects/My-Portfolio/Services.png';
+import PortfolioProjects from '../../../assets/images/projects/My-Portfolio/Projects.png';
+import PortfolioAssignments from '../../../assets/images/projects/My-Portfolio/Assignments.png';
+import PortfolioApplications from '../../../assets/images/projects/My-Portfolio/Applications.png';
+import PortfolioGallery from '../../../assets/images/projects/My-Portfolio/Gallery.png';
+import PortfolioContact from '../../../assets/images/projects/My-Portfolio/Contact.png';
+import PortfolioContact2 from '../../../assets/images/projects/My-Portfolio/Contact2.png';
+import PortfolioCodes from '../../../assets/images/projects/My-Portfolio/Codes.png';
+
+// LinkedIn Clone
+import LinkedInCloneHome from '../../../assets/images/projects/LinkedIn-Clone/Home.png';
+import LinkedInCloneNetwork from '../../../assets/images/projects/LinkedIn-Clone/Network.png';
+import LinkedInClonePost from '../../../assets/images/projects/LinkedIn-Clone/Post.png';
+import LinkedInCloneNotification from '../../../assets/images/projects/LinkedIn-Clone/Notification.png';
+import LinkedInCloneJobs from '../../../assets/images/projects/LinkedIn-Clone/Jobs.png';
+import LinkedInCloneProfile from '../../../assets/images/projects/LinkedIn-Clone/Profile.png';
+import LinkedInCloneCodes from '../../../assets/images/projects/LinkedIn-Clone/Codes.png';
+
+// MERN POS System
+import MERNPOSTheme from '../../../assets/images/projects/MERN-POS/Theme.png';
+import MERNPOSCustomer from '../../../assets/images/projects/MERN-POS/Customer.png';
+import MERNPOSItem from '../../../assets/images/projects/MERN-POS/Item.png';
+import MERNPOSCodes from '../../../assets/images/projects/MERN-POS/Codes.png';
+
+// Connect 4 Game
+import Connect4Theme from '../../../assets/images/projects/Connect-4-Game/Theme.png';
+import Connect4UserName from '../../../assets/images/projects/Connect-4-Game/User-Name.png';
+import Connect4GamePlay from '../../../assets/images/projects/Connect-4-Game/Game-Play.png';
+import Connect4Codes from '../../../assets/images/projects/Connect-4-Game/Codes.png';
+
+// Portfolio v2
+import PortfolioV2Theme from '../../../assets/images/projects/My-Portfolio-V2/Theme.png';
+import PortfolioV2Home from '../../../assets/images/projects/My-Portfolio-V2/Home.png';
+import PortfolioV2About from '../../../assets/images/projects/My-Portfolio-V2/About.png';
+import PortfolioV2Skills from '../../../assets/images/projects/My-Portfolio-V2/Skills.png';
+import PortfolioV2Projects1 from '../../../assets/images/projects/My-Portfolio-V2/Projects1.png';
+import PortfolioV2Projects2 from '../../../assets/images/projects/My-Portfolio-V2/Projects2.png';
+import PortfolioV2Projects3 from '../../../assets/images/projects/My-Portfolio-V2/Projects3.png';
+import PortfolioV2Services from '../../../assets/images/projects/My-Portfolio-V2/Services.png';
+import PortfolioV2Contacts from '../../../assets/images/projects/My-Portfolio-V2/Contacts.png';
+import PortfolioV2Codes from '../../../assets/images/projects/My-Portfolio-V2/Codes.png';
+
 const shoeShopImages = [
-  // 'src/assets/images/projects/Shoe-Shop/Theme.png',
-  'src/assets/images/projects/Shoe-Shop/Home.png',
-  'src/assets/images/projects/Shoe-Shop/SignUp.png',
-  'src/assets/images/projects/Shoe-Shop/SignIn.png',
-  'src/assets/images/projects/Shoe-Shop/Admin-Dashboard.png',
-  'src/assets/images/projects/Shoe-Shop/Customer.png',
-  'src/assets/images/projects/Shoe-Shop/Employee.png',
-  'src/assets/images/projects/Shoe-Shop/Supplier.png',
-  'src/assets/images/projects/Shoe-Shop/Inventory.png',
-  'src/assets/images/projects/Shoe-Shop/Sales.png',
-  'src/assets/images/projects/Shoe-Shop/Admin.png',
-  'src/assets/images/projects/Shoe-Shop/User.png',
-  'src/assets/images/projects/Shoe-Shop/Codes.png',
+  ShoeShopHome,
+  ShoeShopSignUp,
+  ShoeShopSignIn,
+  ShoeShopAdminDashboard,
+  ShoeShopCustomer,
+  ShoeShopEmployee,
+  ShoeShopSupplier,
+  ShoeShopInventory,
+  ShoeShopSales,
+  ShoeShopAdmin,
+  ShoeShopUser,
+  ShoeShopCodes,
 ];
 
 const computerShopImages = [
-  // 'src/assets/images/projects/Computer-Shop/Theme.png',
-  'src/assets/images/projects/Computer-Shop/Login.png',
-  'src/assets/images/projects/Computer-Shop/Admin-Dashboard.png',
-  'src/assets/images/projects/Computer-Shop/Customer.png',
-  'src/assets/images/projects/Computer-Shop/Supplier.png',
-  'src/assets/images/projects/Computer-Shop/Store.png',
-  'src/assets/images/projects/Computer-Shop/Salary.png',
-  'src/assets/images/projects/Computer-Shop/Orders.png',
-  'src/assets/images/projects/Computer-Shop/Reports.png',
-  'src/assets/images/projects/Computer-Shop/Customer-Report.png',
-  'src/assets/images/projects/Computer-Shop/Codes.png',
+  ComputerShopLogin,
+  ComputerShopAdminDashboard,
+  ComputerShopCustomer,
+  ComputerShopSupplier,
+  ComputerShopStore,
+  ComputerShopSalary,
+  ComputerShopOrders,
+  ComputerShopReports,
+  ComputerShopCustomerReport,
+  ComputerShopCodes,
 ];
 
 const hostelManagementImages = [
-  // 'src/assets/images/projects/Hostel-Management/Theme.png',
-  'src/assets/images/projects/Hostel-Management/Home.png',
-  'src/assets/images/projects/Hostel-Management/Admin-Dashboard.png',
-  'src/assets/images/projects/Hostel-Management/Students.png',
-  'src/assets/images/projects/Hostel-Management/Rooms.png',
-  'src/assets/images/projects/Hostel-Management/Reservation.png',
-  'src/assets/images/projects/Hostel-Management/Key-Money.png',
-  'src/assets/images/projects/Hostel-Management/User.png',
-  'src/assets/images/projects/Hostel-Management/Reports.png',
-  'src/assets/images/projects/Hostel-Management/Codes.png',
+  HostelManagementHome,
+  HostelManagementAdminDashboard,
+  HostelManagementStudents,
+  HostelManagementRooms,
+  HostelManagementReservation,
+  HostelManagementKeyMoney,
+  HostelManagementUser,
+  HostelManagementReports,
+  HostelManagementCodes,
 ];
 
 const chatApplicationImages = [
-  // 'src/assets/images/projects/Chat-Application/Theme.png',
-  'src/assets/images/projects/Chat-Application/Chat-Room-1.png',
-  'src/assets/images/projects/Chat-Application/Chat-Room-2.png',
-  'src/assets/images/projects/Chat-Application/Codes.png',
-  'src/assets/images/projects/Chat-Application/Live-Chat-Room.gif',
+  ChatRoom1,
+  ChatRoom2,
+  ChatApplicationCodes,
+  ChatApplicationLiveChatRoom,
 ];
 
 const shoeShopLandingImages = [
-  // 'src/assets/images/projects/Shoe-Shop-Landing/Theme.png',
-  'src/assets/images/projects/Shoe-Shop-Landing/Home.png',
-  'src/assets/images/projects/Shoe-Shop-Landing/About.png',
-  'src/assets/images/projects/Shoe-Shop-Landing/Shoe-Collection-1.png',
-  'src/assets/images/projects/Shoe-Shop-Landing/Shoe-Collection-2.png',
-  'src/assets/images/projects/Shoe-Shop-Landing/CTA.png',
-  'src/assets/images/projects/Shoe-Shop-Landing/Reviews.png',
-  'src/assets/images/projects/Shoe-Shop-Landing/Discount.png',
-  'src/assets/images/projects/Shoe-Shop-Landing/Contacts.png',
-  'src/assets/images/projects/Shoe-Shop-Landing/Codes.png',
+  ShoeShopLandingHome,
+  ShoeShopLandingAbout,
+  ShoeShopLandingShoeCollection1,
+  ShoeShopLandingShoeCollection2,
+  ShoeShopLandingCTA,
+  ShoeShopLandingReviews,
+  ShoeShopLandingDiscount,
+  ShoeShopLandingContacts,
+  ShoeShopLandingCodes,
 ];
 
 const portfolioImages = [
-  // 'src/assets/images/projects/My-Portfolio/Theme.png',
-  'src/assets/images/projects/My-Portfolio/Home.png',
-  'src/assets/images/projects/My-Portfolio/About.png',
-  'src/assets/images/projects/My-Portfolio/Skills.png',
-  'src/assets/images/projects/My-Portfolio/Services.png',
-  'src/assets/images/projects/My-Portfolio/Projects.png',
-  'src/assets/images/projects/My-Portfolio/Assignments.png',
-  'src/assets/images/projects/My-Portfolio/Applications.png',
-  'src/assets/images/projects/My-Portfolio/Gallery.png',
-  'src/assets/images/projects/My-Portfolio/Contact.png',
-  'src/assets/images/projects/My-Portfolio/Contact2.png',
-  'src/assets/images/projects/My-Portfolio/Codes.png',
+  PortfolioHome,
+  PortfolioAbout,
+  PortfolioSkills,
+  PortfolioServices,
+  PortfolioProjects,
+  PortfolioAssignments,
+  PortfolioApplications,
+  PortfolioGallery,
+  PortfolioContact,
+  PortfolioContact2,
+  PortfolioCodes,
 ];
 
 const linkedInCloneImages = [
-  // 'src/assets/images/projects/LinkedIn-Clone/Theme.png',
-  'src/assets/images/projects/LinkedIn-Clone/Home.png',
-  'src/assets/images/projects/LinkedIn-Clone/Network.png',
-  'src/assets/images/projects/LinkedIn-Clone/Post.png',
-  'src/assets/images/projects/LinkedIn-Clone/Notification.png',
-  'src/assets/images/projects/LinkedIn-Clone/Jobs.png',
-  'src/assets/images/projects/LinkedIn-Clone/Profile.png',
-  'src/assets/images/projects/LinkedIn-Clone/Codes.png',
+  LinkedInCloneHome,
+  LinkedInCloneNetwork,
+  LinkedInClonePost,
+  LinkedInCloneNotification,
+  LinkedInCloneJobs,
+  LinkedInCloneProfile,
+  LinkedInCloneCodes,
 ];
 
 const mernPOSImages = [
-  'src/assets/images/projects/MERN-POS/Theme.png',
-  'src/assets/images/projects/MERN-POS/Customer.png',
-  'src/assets/images/projects/MERN-POS/Item.png',
-  'src/assets/images/projects/MERN-POS/Codes.png',
+  MERNPOSTheme,
+  MERNPOSCustomer,
+  MERNPOSItem,
+  MERNPOSCodes,
 ];
 
 const connect4Images = [
-  'src/assets/images/projects/Connect-4-Game/Theme.png',
-  'src/assets/images/projects/Connect-4-Game/User-Name.png',
-  'src/assets/images/projects/Connect-4-Game/Game-Play.png',
-  'src/assets/images/projects/Connect-4-Game/Codes.png',
+  Connect4Theme,
+  Connect4UserName,
+  Connect4GamePlay,
+  Connect4Codes,
 ];
 
 const portfolioV2Images = [
-  'src/assets/images/projects/My-Portfolio-V2/Theme.png',
-  'src/assets/images/projects/My-Portfolio-V2/Home.png',
-  'src/assets/images/projects/My-Portfolio-V2/About.png',
-  'src/assets/images/projects/My-Portfolio-V2/Skills.png',
-  'src/assets/images/projects/My-Portfolio-V2/Projects1.png',
-  'src/assets/images/projects/My-Portfolio-V2/Projects2.png',
-  'src/assets/images/projects/My-Portfolio-V2/Projects3.png',
-  'src/assets/images/projects/My-Portfolio-V2/Services.png',
-  'src/assets/images/projects/My-Portfolio-V2/Contacts.png',
-  'src/assets/images/projects/My-Portfolio-V2/Codes.png',
+  PortfolioV2Theme,
+  PortfolioV2Home,
+  PortfolioV2About,
+  PortfolioV2Skills,
+  PortfolioV2Projects1,
+  PortfolioV2Projects2,
+  PortfolioV2Projects3,
+  PortfolioV2Services,
+  PortfolioV2Contacts,
+  PortfolioV2Codes,
 ];
 
 export function Projects() {
