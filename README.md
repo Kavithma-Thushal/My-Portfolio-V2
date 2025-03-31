@@ -33,6 +33,12 @@ creativity.
 ✅ **Contact Form**: Allow visitors to get in touch with you easily via a contact form.<br/>
 ✅ **Smooth Navigation**: Smooth scrolling and intuitive navigation for seamless user experience.<br/>
 
+## How to Use
+
+✅ **To run** - `npm run dev`<br/>
+✅ **To Deploy** -
+`First remove the dist file from project locally and then build (npm run build) the project and then deploy (npm run deploy) the project.`<br/>
+
 ## 📸 Screenshots
 
 ### Home
