@@ -3,15 +3,15 @@ import PopUpImage from './PopUpImage';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 
 // Leave Management System
-import LeaveManagementTheme from '../../../assets/images/projects/Leave-Management-System/Theme.png';
+// import LeaveManagementTheme from '../../../assets/images/projects/Leave-Management-System/Theme.png';
 import LeaveManagementHome from '../../../assets/images/projects/Leave-Management-System/Home.png';
 import LeaveManagementRegister from '../../../assets/images/projects/Leave-Management-System/Register.png';
 import LeaveManagementLogin from '../../../assets/images/projects/Leave-Management-System/Login.png';
 import LeaveManagementEmployeeDashboard
     from '../../../assets/images/projects/Leave-Management-System/Employee-Dashboard.png';
+import LeaveManagementApplyForLeave from '../../../assets/images/projects/Leave-Management-System/Apply-For-Leave.png';
 import LeaveManagementAdminDashboard from '../../../assets/images/projects/Leave-Management-System/Admin-Dashboard.png';
-import LeaveManagementAdminDashboard2
-    from '../../../assets/images/projects/Leave-Management-System/Admin-Dashboard-2.png';
+import LeaveManagementLeaveAnalysis from '../../../assets/images/projects/Leave-Management-System/Leave-Analysis.png';
 import LeaveManagementCodes from '../../../assets/images/projects/Leave-Management-System/Codes.png';
 
 // Laptop Hive MERN
@@ -192,13 +192,14 @@ import JavaEEPOSOrderDetails from '../../../assets/images/projects/JavaEE-POS/Or
 import JavaEEPOSPOSCodes from '../../../assets/images/projects/JavaEE-POS/Codes.png';
 
 const leaveManagementImages = [
-    LeaveManagementTheme,
+    // LeaveManagementTheme,
     LeaveManagementHome,
     LeaveManagementRegister,
     LeaveManagementLogin,
     LeaveManagementEmployeeDashboard,
+    LeaveManagementApplyForLeave,
     LeaveManagementAdminDashboard,
-    LeaveManagementAdminDashboard2,
+    LeaveManagementLeaveAnalysis,
     LeaveManagementCodes,
 ];
 
