@@ -430,8 +430,7 @@ export function Projects() {
 
     return (
         <div className="flex flex-col items-center justify-center min-h-screen bg-darkBlue pt-20 pb-5">
-            <h1 className="text-4xl font-bold text-center text-neonBlue mb-10 fixed top-2 left-0 right-0 z-10 mt-20 bg-darkBlue pb-5">My
-                Projects</h1>
+            <h1 className="text-4xl font-bold text-center text-neonBlue bg-darkBlue">My Projects</h1>
 
             <div className="max-w-7xl px-6 space-y-32 mt-20">
 
